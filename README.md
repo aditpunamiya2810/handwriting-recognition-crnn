@@ -68,8 +68,8 @@ Images are numbered in the same order as the word lists in `prepare_dataset.py`.
 | Brown | Quion |
 
 <p align="center">
-  <img src="docs/images/prediction_1.png" width="45%" alt="Sample English prediction">
-  <img src="docs/images/prediction_2.png" width="45%" alt="Sample Hindi prediction">
+  <img src="data/images/prediction_1.png" width="45%" alt="Sample English prediction">
+  <img src="data/images/prediction_2.png" width="45%" alt="Sample Hindi prediction">
 </p>
 
 ## Getting Started
