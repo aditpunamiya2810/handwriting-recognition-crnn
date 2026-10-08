@@ -17,7 +17,7 @@ def test_model():
     print("--- Starting Model Test ---")
 
     # --- 1. Load Model and Vocabulary ---
-    if not os.path.exists("handwriting_model_pytorch.pth"):
+    if not os.path.exists("models/handwriting_model_pytorch_v2.pth"):
         print("Error: 'handwriting_model_pytorch.pth' not found. Please train the model first.")
         return
         
