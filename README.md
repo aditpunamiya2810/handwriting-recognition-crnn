@@ -103,10 +103,5 @@ Pretrained weights are in `models/`. `_v2` was trained with data augmentation.
 - Add beam search / language-model decoding
 - Extend to full sentences and more writers
 
-## Team
-- [Name 1] (I003)
-- [Name 2] (I025)
-- [Name 3] (I048)
-
 ## License
 MIT License
