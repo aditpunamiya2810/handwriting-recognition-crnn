@@ -51,20 +51,26 @@ Images are numbered in the same order as the word lists in `prepare_dataset.py`.
 ## Results
 | Metric | Value |
 |--------|-------|
-| Final training loss | [x.xxxx] |
-| Character accuracy | [xx%] |
-| Word accuracy | [xx%] |
+| Epochs | 200 |
+| Final training loss | 0.2859 |
+| Character accuracy | Not formally evaluated |
+| Word accuracy | Not formally evaluated |
 
-Sample predictions:
+> Formal accuracy metrics (character error rate and word accuracy) have not been computed yet. The samples below are validation predictions logged at epoch 200.
+
+### Sample Predictions (Epoch 200)
 
 | True | Predicted |
 |------|-----------|
-| [Water] | [Water] |
-| [पानी] | [पानी] |
+| बंद करना | बंद कना |
+| दादी | नादी |
+| आशा | आशा |
+| Brown | Quion |
 
-![Sample English prediction](data/images/prediction_1.png)
-![Sample Hindi prediction](data/images/prediction_2.png)
-
+<p align="center">
+  <img src="docs/images/prediction_1.png" width="45%" alt="Sample English prediction">
+  <img src="docs/images/prediction_2.png" width="45%" alt="Sample Hindi prediction">
+</p>
 
 ## Getting Started
 
@@ -79,15 +85,15 @@ pip install -r requirements.txt
 1. Prepare your dataset in the structure above.
 2. Generate labels and the vocabulary:
 ```bash
-   python prepare_dataset.py
+python prepare_dataset.py
 ```
 3. Train:
 ```bash
-   python train.py
+python train.py
 ```
 4. Test with the pretrained model:
 ```bash
-   python test.py
+python test.py
 ```
 
 Pretrained weights are in `models/`. `_v2` was trained with data augmentation.
@@ -102,6 +108,8 @@ Pretrained weights are in `models/`. `_v2` was trained with data augmentation.
 ## Limitations and Future Work
 - Limited vocabulary (word-level samples only)
 - Small number of writers
+- Model shows signs of overfitting on English words (e.g. "Brown") with the small dataset
+- Formal evaluation (character error rate, word accuracy on a held-out test set) is planned
 - Add beam search / language-model decoding
 - Extend to full sentences and more writers
 
