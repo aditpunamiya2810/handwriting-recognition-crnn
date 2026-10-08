@@ -88,8 +88,8 @@ pip install -r requirements.txt
    python test.py
 ```
 
-![Sample English prediction](docs/images/prediction_1.png)
-![Sample Hindi prediction](docs/images/prediction_2.png)
+![Sample English prediction](data/images/prediction_1.png)
+![Sample Hindi prediction](data/images/prediction_2.png)
 
 Pretrained weights are in `models/`. `_v2` was trained with data augmentation.
 
