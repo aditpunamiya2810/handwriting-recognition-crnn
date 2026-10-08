@@ -62,7 +62,9 @@ Sample predictions:
 | [Water] | [Water] |
 | [पानी] | [पानी] |
 
-(You can add screenshots from `testing.ipynb` here.)
+![Sample English prediction](data/images/prediction_1.png)
+![Sample Hindi prediction](data/images/prediction_2.png)
+
 
 ## Getting Started
 
@@ -87,9 +89,6 @@ pip install -r requirements.txt
 ```bash
    python test.py
 ```
-
-![Sample English prediction](data/images/prediction_1.png)
-![Sample Hindi prediction](data/images/prediction_2.png)
 
 Pretrained weights are in `models/`. `_v2` was trained with data augmentation.
 
